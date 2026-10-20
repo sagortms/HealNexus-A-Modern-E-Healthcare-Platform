@@ -1,0 +1,32 @@
+
+.logo-container,
+.animated-logo-svg {
+  background-color: transparent !important;
+}
+
+.heartbeat-path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawAndFade 5s ease-in-out infinite;
+}
+
+@keyframes drawAndFade {
+  0% {
+    stroke-dashoffset: 600;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
